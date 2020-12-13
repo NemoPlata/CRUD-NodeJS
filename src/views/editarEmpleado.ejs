@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CRUD</title>
+		<link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+	</head>
+	<body>		
+		<nav class="navbar navbar-dark bg-dark">
+			<a href="/" class="navbar-brand">Registro de Empleados Node js</a>
+		</nav>		
+		<div class="container mt-5">
+		  <div class="row">
+		    <div class="col-md-5 offset-md-3 card">
+		      <div class="card-body">
+		        <form action="/update/<%= data.id %>" method="POST">
+		          <div class="form-group">
+		            <input type="text" name="nombre" value="<%= data.nombre%>" placeholder="Nombre" maxlength="15" class="form-control" autofocus>
+		          </div>
+		          <div class="form-group">
+		            <input type="text" name="apellidos" value="<%= data.apellidos%>" placeholder="Apellidos" maxlength="15" class="form-control">
+		          </div>
+		          <div class="form-group">
+		            <input type="text" name="puesto" value="<%= data.puesto%>" placeholder="Puesto" maxlength="15" class="form-control">
+		          </div>
+
+		          <button type="submit" class="btn btn-primary">
+		            Guardar
+		          </button>
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+</html>
